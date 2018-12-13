@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>StackOverflow Lite</title>
-  <link rel="icon" href="images/stack-logo-2.png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -68,6 +67,40 @@
         </p>
       </div>
     </div>
+
+    <div class="quiz-answer">
+      <h3 class="answer-head">Answer</h3>
+      <div class="user-time">
+        <p class="user-title">
+          <span class="user-name">bkin0120</span> |
+          <span class="time-asked">13/12/2018, 11:04 am</span>
+        </p>
+      </div>
+
+      <div class="actual-answer actual-quiz">
+        <p class="quoted-quiz quiz-par">
+          hint: (e.g. 'git pull ...') before pushing again. <br />
+          hint: See the 'Note about fast-forwards' in 'git push --help' for
+          details.
+        </p>
+        <div class="answer-par">
+          based on the above error error info, You must first do a git pull before you push. <br>
+          Try:
+          <br>
+          <div class="quoted-answer">
+            git pull or git pull origin branch-name
+          </div> <br>
+          The error is because of an inconsistency between your local repo and what is on github. Maybe a change has
+          been made online on github and has not been updated to your local repository
+          "git pull" should fix that.
+        </div>
+      </div>
+    </div>
+
+    <div class="answer-quiz ">
+      <button type="button" class="answer-first-btn answer-again-btn">Add an Answer <span class="fas fa-plus"></span></button>
+    </div>
+
   </section>
 
   <section class="question-dialog">
@@ -87,6 +120,9 @@
           and I want to insert 2 between 1 and 3.
         </p>
       </div>
+    </div>
+    <div class="answer-quiz">
+      <button type="button" class="answer-first-btn">Answer Quiz</button>
     </div>
   </section>
 
@@ -108,6 +144,14 @@
           will help me learn more.
         </p>
       </div>
+    </div>
+    <div class="quiz-answer quiz-answer-now">
+      <form action="#" class="answering">
+        <label for="quiz-answer" class="answer-now">Answer for the question: </label>
+        <textarea name="quiz-answer" cols="50" rows="8" class="answer-descr-box" required placeholder="Enter your answer here....."></textarea>
+        <br>
+        <input type="submit" role="button" value="Submit Answer" class="submit-answer">
+      </form>
     </div>
   </section>
 </body>
